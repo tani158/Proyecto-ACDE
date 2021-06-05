@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2021-01-13" view-index="0" gantt-divider-location="371" resource-divider-location="300" version="2.8.11" locale="es">
+    <description/>
+    <view zooming-state="default:2" id="gantt-chart">
+        <field id="tpd3" name="Nombre" width="161" order="0"/>
+        <field id="tpd4" name="Fecha de inicio" width="96" order="1"/>
+        <field id="tpd5" name="Fecha de fin" width="95" order="2"/>
+        <option id="color.recent"><![CDATA[#00ffff #ff00cc #990000 #00cc33 #ff3333 #cc00cc #cccc00 #000099]]></option>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Nombre" width="210" order="0"/>
+        <field id="1" name="Función" width="86" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="0" name="Fase Analisis" color="#ff00cc" shape="0,1,0,1,0,0,1,0,0,1,0,1,1,0,0,0" meeting="false" start="2020-11-30" duration="70" complete="100" thirdDate="2021-05-06" thirdDate-constraint="0" expand="true" cost-manual-value="160000.0" cost-calculated="false"/>
+        <task id="5" name="Identificacion del proyecto" color="#cccc00" shape="0,0,0,0,1,1,1,1,0,0,0,0,1,1,1,1" meeting="false" start="2020-11-30" duration="3" complete="100" thirdDate="2021-02-04" thirdDate-constraint="0" expand="true">
+            <notes><![CDATA[Se conforma los integrantes  y se identifica en el sector a trabajar en proyecto ACDE (Administracion en capacitacion y desarrollo empresarial).
+  ]]></notes>
+            <depend id="284" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="284" name="Objetivos" color="#00ffff" shape="0,1,0,1,0,0,1,0,0,1,0,1,1,0,0,0" meeting="false" start="2020-12-03" duration="2" complete="100" thirdDate="2020-12-03" thirdDate-constraint="0" expand="true">
+            <notes><![CDATA[Se elaboran los objetivos especifos y general del proyecto ACDE.]]></notes>
+            <depend id="246" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="246" name="Plantamiento del Problema" color="#ff3333" shape="0,1,0,1,0,0,1,0,0,1,0,1,1,0,0,0" meeting="false" start="2020-12-07" duration="3" complete="100" thirdDate="2020-12-07" thirdDate-constraint="1" expand="true">
+            <notes><![CDATA[Se analiza el plantamiento del problema del sector a trabjar del proyecto ACDE.]]></notes>
+            <depend id="250" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="250" name="Justicacion" color="#00cc33" shape="0,1,0,1,0,0,1,0,0,1,0,1,1,0,0,0" meeting="false" start="2020-12-10" duration="1" complete="100" thirdDate="2020-12-23" thirdDate-constraint="0" expand="true">
+            <notes><![CDATA[Se elabora la Justificacion del proyecto ACDE.]]></notes>
+            <depend id="258" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="258" name="Alcance del Proyecto." color="#00ffff" shape="1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0" meeting="false" start="2020-12-11" duration="2" complete="100" thirdDate="2020-11-23" thirdDate-constraint="0" expand="true">
+            <notes><![CDATA[Se plantea el alcance del proyecto ACDE.]]></notes>
+            <depend id="262" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="262" name="Tecnica de Recoleccion" color="#ff00cc" shape="0,0,0,0,1,1,1,1,0,0,0,0,1,1,1,1" meeting="false" start="2020-12-15" duration="2" complete="100" thirdDate="2020-11-23" thirdDate-constraint="0" expand="true">
+            <notes><![CDATA[El proyecto ACDE aplica la encuesta para la tecnica de recoleccion de datos y ver el estado de los trabajadores.]]></notes>
+            <depend id="10" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="10" name="Diagrama de flujo BPMN" color="#00cc33" shape="1,1,1,0,1,1,0,0,1,0,0,0,0,0,0,0" meeting="false" start="2020-12-17" duration="3" complete="100" thirdDate="2020-11-16" thirdDate-constraint="1" expand="true">
+            <notes><![CDATA[Se elabora el diagrama de flujo BPMN del proyecto ACDE  ]]></notes>
+            <depend id="22" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="22" name="Diagrama de UML" color="#00ffff" shape="0,1,1,1,1,0,0,0,1,0,0,0,1,0,0,0" meeting="false" start="2020-12-22" duration="5" complete="100" thirdDate="2020-11-23" thirdDate-constraint="0" expand="true">
+            <notes><![CDATA[Se elabora el digrama de UML del proyecto ACDE ]]></notes>
+            <depend id="44" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="44" name="Diagrama de clases" color="#ff00cc" shape="1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0" meeting="false" start="2020-12-29" duration="5" complete="100" thirdDate="2020-11-27" thirdDate-constraint="0" expand="true">
+            <notes><![CDATA[Se elabora el diagrama de clases del proyecto ACDE ]]></notes>
+            <depend id="58" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="58" name="Diagrama de secuencia" color="#00ffff" shape="1,0,0,0,1,0,0,0,1,0,0,0,1,1,1,1" meeting="false" start="2021-01-05" duration="4" complete="100" thirdDate="2020-12-07" thirdDate-constraint="0" expand="true">
+            <notes><![CDATA[Se elabora ell diagrama de secuencia del proyecto ACDE ]]></notes>
+            <depend id="66" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="66" name="Diagrama de colaboracion" color="#ff3333" shape="0,0,0,0,1,1,1,1,0,0,0,0,1,1,1,1" meeting="false" start="2021-01-11" duration="12" complete="100" thirdDate="2020-12-07" thirdDate-constraint="0" expand="true">
+            <notes><![CDATA[Se elabora el diagrama de colaboracion del proyecto ACDE ]]></notes>
+            <depend id="71" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="71" name="Diagrama de estado" color="#cccc00" shape="0,0,0,0,1,1,1,1,0,0,0,0,1,1,1,1" meeting="false" start="2021-01-27" duration="10" complete="100" thirdDate="2020-12-22" thirdDate-constraint="0" expand="true">
+            <notes><![CDATA[Se elabora el diagrama de estado del proyecto ACDE]]></notes>
+            <depend id="80" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="80" name="Diagrama de componentes" color="#ff3333" shape="0,1,0,1,0,0,1,0,0,1,0,1,1,0,0,0" meeting="false" start="2021-02-10" duration="6" complete="100" thirdDate="2021-01-27" thirdDate-constraint="0" expand="true">
+            <notes><![CDATA[Se elabora el diagrama de componentes del proyecto ACDE]]></notes>
+            <depend id="85" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="85" name="Diagrama de paquetes" color="#8cb6ce" shape="1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0" meeting="false" start="2021-02-18" duration="5" complete="100" thirdDate="2021-01-27" thirdDate-constraint="0" expand="true">
+            <notes><![CDATA[Se elabora el diagrama de paquetes  del proyecto ACDE]]></notes>
+            <depend id="91" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="91" name="GITHUB" color="#00ffff" shape="0,0,0,0,1,1,1,1,0,0,0,0,1,1,1,1" meeting="false" start="2021-02-25" duration="5" complete="100" thirdDate="2021-01-28" thirdDate-constraint="0" expand="true">
+            <notes><![CDATA[Se sube al github todo lo contenido desarrollado del proyecto ACDE.]]></notes>
+            <depend id="92" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="92" name="SUSTENTACION" color="#ff3333" shape="1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0" meeting="false" start="2021-03-04" duration="2" complete="100" thirdDate="2020-12-22" thirdDate-constraint="0" expand="true">
+            <notes><![CDATA[Se realiza la sustentacion del avance del proyecto ACDE ]]></notes>
+            <depend id="97" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="97" name="Fase diseño" color="#000099" shape="0,1,1,1,1,0,0,0,1,0,0,0,1,0,0,0" meeting="false" start="2021-03-08" duration="56" complete="76" thirdDate="2021-02-18" thirdDate-constraint="0" expand="true"/>
+        <task id="100" name="Descarga GIT" color="#00ffff" shape="0,1,0,1,0,0,1,0,0,1,0,1,1,0,0,0" meeting="false" start="2021-03-08" duration="3" complete="100" thirdDate="2021-02-24" thirdDate-constraint="0" expand="true">
+            <notes><![CDATA[Se descarga el Git  para registro  de usuario y email  de cada participante del proyecto ACDE.]]></notes>
+            <depend id="105" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="105" name="Vinculacion GITHUB-GIT" color="#cccc00" shape="0,1,0,1,0,0,1,0,0,1,0,1,1,0,0,0" meeting="false" start="2021-03-11" duration="3" complete="100" thirdDate="2021-02-24" thirdDate-constraint="0" expand="true">
+            <notes><![CDATA[Se realiza la vinculacion de cada participantes del GIT con GITHUB para el debido control de versiones, comentarios  y aportes al proyecto ACDE.]]></notes>
+            <depend id="167" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="167" name="Caso uso Extentido" color="#ff3333" shape="1,0,0,0,1,0,0,0,1,0,0,0,1,1,1,1" meeting="false" start="2021-03-16" duration="4" complete="100" thirdDate="2021-03-09" thirdDate-constraint="0" expand="true">
+            <notes><![CDATA[Se elabora el caso de uso extentido del proyecto ACDE.]]></notes>
+            <depend id="106" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="106" name="Requerimientos funcionales y no funcionales" color="#00cc33" shape="0,0,0,0,0,0,0,1,0,0,1,1,0,1,1,1" meeting="false" start="2021-03-22" duration="4" complete="100" thirdDate="2021-02-24" thirdDate-constraint="0" expand="true">
+            <notes><![CDATA[Para garantizar la calidad del sotfware se realizan los requerimientos funcionales y no funcionales del proyecto  ACDE.]]></notes>
+            <depend id="131" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="131" name="Descarga XAMPP" color="#ff00cc" shape="0,0,0,0,1,1,1,1,0,0,0,0,1,1,1,1" meeting="false" start="2021-03-26" duration="3" complete="100" thirdDate="2021-03-12" thirdDate-constraint="0" expand="true">
+            <notes><![CDATA[Se  descarga el servidor XAMPP en cada dispositivo de los participantes del proyecto ACDE.]]></notes>
+            <depend id="134" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="134" name="Descarga MYSQL WORKBENCH" color="#990000" shape="1,0,0,0,1,0,0,0,1,0,0,0,1,1,1,1" meeting="false" start="2021-03-31" duration="3" complete="100" thirdDate="2021-03-12" thirdDate-constraint="0" expand="true">
+            <notes><![CDATA[Se Descarga el programa MYSQL WORBENCH en los dispositivo de cada participante del proyecto ACDE.]]></notes>
+            <depend id="149" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="149" name="Base datos lucichart" color="#00cc33" shape="1,0,0,0,1,0,0,0,1,0,0,0,1,1,1,1" meeting="false" start="2021-04-05" duration="5" complete="100" thirdDate="2021-03-12" thirdDate-constraint="0" expand="true">
+            <notes><![CDATA[Se elabora la base de datos en primera, seguda y tercera forma del proyecto ACDE  en el programa lucicharth.]]></notes>
+            <depend id="152" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="152" name="Base de datos MYSQL WORKBENCH" color="#cccc00" shape="0,0,0,0,1,1,1,1,0,0,0,0,1,1,1,1" meeting="false" start="2021-04-12" duration="5" complete="100" thirdDate="2021-03-12" thirdDate-constraint="0" expand="true">
+            <notes><![CDATA[Se sube la base de datos a MYSQL WORKBENCH con el modelo de la segunda forma creado en lucichath del proyecto ACDE. ]]></notes>
+            <depend id="163" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="163" name="Base de datos XAMPP" color="#00ffff" shape="1,0,1,0,0,1,0,1,1,0,1,0,0,1,0,1" meeting="false" start="2021-04-19" duration="5" complete="100" thirdDate="2021-03-19" thirdDate-constraint="0" expand="true">
+            <notes><![CDATA[Se exporta la base de datos de MYQSL WORKBENCH del proyecto ACDE sin errores al servidor del XAMPP.]]></notes>
+            <depend id="165" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="165" name="Insertan los datos al servidor" color="#cc00cc" shape="0,0,0,0,1,1,1,1,0,0,0,0,1,1,1,1" meeting="false" start="2021-04-26" duration="4" complete="100" thirdDate="2021-03-09" thirdDate-constraint="0" expand="true">
+            <notes><![CDATA[Despues de exportar la base de datos del proyecto ACDE  se pasa a insertas los datos desde las tablas madres.]]></notes>
+            <depend id="229" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="229" name="Diccionario de datos" color="#ff3333" shape="1,0,1,0,0,1,0,1,1,0,1,0,0,1,0,1" meeting="false" start="2021-04-30" duration="3" complete="100" thirdDate="2021-03-31" thirdDate-constraint="0" expand="true">
+            <notes><![CDATA[Se elaboara el diccionario de la base de datos del proyecto ACDE.]]></notes>
+            <depend id="233" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="233" name="Nomina y Costos" color="#000099" shape="0,1,1,1,1,0,0,0,1,0,0,0,1,0,0,0" meeting="false" start="2021-05-05" duration="3" complete="100" thirdDate="2021-03-31" thirdDate-constraint="0" expand="true">
+            <notes><![CDATA[Se elabora la nomina en hoja de excel  del proyecto ACDE  con los costos, ventas, plan de inversion etc.]]></notes>
+            <depend id="236" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="236" name="Descarga Gantt project" color="#cccc00" shape="1,0,1,0,0,1,0,1,1,0,1,0,0,1,0,1" meeting="false" start="2021-05-10" duration="3" complete="100" thirdDate="2021-04-01" thirdDate-constraint="0" expand="true">
+            <notes><![CDATA[Se descarga en los dispositivos de cada participantes  el programa gantt project.]]></notes>
+            <depend id="238" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="238" name="Fases en gantt project" color="#cc00cc" shape="1,0,0,0,1,0,0,0,1,0,0,0,1,1,1,1" meeting="false" start="2021-05-13" duration="3" complete="100" thirdDate="2021-03-22" thirdDate-constraint="0" expand="true">
+            <notes><![CDATA[Se sube todo el proceso por fases  del proyecto ACDE  desde su inicio en identificacion hasta donde se ha desarrollado su contenido. ]]></notes>
+            <depend id="240" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="240" name="Nuevo contenido Github" color="#990000" shape="1,1,1,0,1,1,0,0,1,0,0,0,0,0,0,0" meeting="false" start="2021-05-18" duration="5" complete="0" thirdDate="2021-04-26" thirdDate-constraint="0" expand="true">
+            <notes><![CDATA[Se sube a la wed de GITHUB los nuevos contenido del proyecto ACDE desarrollados.]]></notes>
+        </task>
+    </tasks>
+    <resources>
+        <resource id="0" name="Ruben Alejandro Yepez Guerrero" function="Default:1" contacts="rayepez8@misena.edu.co" phone="3185470336">
+            <rate name="standard" value="40000"/>
+        </resource>
+        <resource id="1" name="Joan Sebastian Gomez Velasques" function="SoftwareDevelopment:8" contacts="joansebastiango30@gmail.com " phone="350 6881548">
+            <rate name="standard" value="40000"/>
+        </resource>
+        <resource id="2" name="Tania Melissa Castañeda Lopez " function="SoftwareDevelopment:8" contacts="tmcastaneda2@misena.edu.co" phone="3192958586">
+            <rate name="standard" value="40000"/>
+        </resource>
+        <resource id="3" name="Jaider Erisney Obando Gonzalez" function="SoftwareDevelopment:8" contacts="jaieobando@misena.edu.co" phone="3103077797">
+            <rate name="standard" value="40000"/>
+        </resource>
+    </resources>
+    <allocations>
+        <allocation task-id="10" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="5" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="0" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="22" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="44" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="58" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="66" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="71" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="85" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="91" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="92" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="97" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="100" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="105" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="106" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="131" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="134" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="149" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="152" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="163" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="167" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="165" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="229" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="233" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="236" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="238" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="240" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="246" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="250" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="258" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="262" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="284" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="10" resource-id="1" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+        <allocation task-id="5" resource-id="1" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+        <allocation task-id="0" resource-id="1" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+        <allocation task-id="22" resource-id="1" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+        <allocation task-id="44" resource-id="1" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+        <allocation task-id="58" resource-id="1" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+        <allocation task-id="66" resource-id="1" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+        <allocation task-id="71" resource-id="1" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+        <allocation task-id="80" resource-id="1" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+        <allocation task-id="85" resource-id="1" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+        <allocation task-id="91" resource-id="1" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+        <allocation task-id="92" resource-id="1" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+        <allocation task-id="97" resource-id="1" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+        <allocation task-id="100" resource-id="1" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+        <allocation task-id="105" resource-id="1" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+        <allocation task-id="106" resource-id="1" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+        <allocation task-id="131" resource-id="1" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+        <allocation task-id="134" resource-id="1" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+        <allocation task-id="149" resource-id="1" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+        <allocation task-id="152" resource-id="1" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+        <allocation task-id="163" resource-id="1" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+        <allocation task-id="167" resource-id="1" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+        <allocation task-id="165" resource-id="1" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+        <allocation task-id="229" resource-id="1" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+        <allocation task-id="233" resource-id="1" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+        <allocation task-id="236" resource-id="1" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+        <allocation task-id="238" resource-id="1" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+        <allocation task-id="240" resource-id="1" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+        <allocation task-id="246" resource-id="1" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+        <allocation task-id="250" resource-id="1" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+        <allocation task-id="258" resource-id="1" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+        <allocation task-id="262" resource-id="1" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+        <allocation task-id="284" resource-id="1" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+        <allocation task-id="10" resource-id="2" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+        <allocation task-id="5" resource-id="2" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+        <allocation task-id="0" resource-id="2" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+        <allocation task-id="22" resource-id="2" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+        <allocation task-id="44" resource-id="2" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+        <allocation task-id="58" resource-id="2" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+        <allocation task-id="66" resource-id="2" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+        <allocation task-id="71" resource-id="2" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+        <allocation task-id="80" resource-id="2" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+        <allocation task-id="85" resource-id="2" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+        <allocation task-id="91" resource-id="2" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+        <allocation task-id="92" resource-id="2" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+        <allocation task-id="97" resource-id="2" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+        <allocation task-id="100" resource-id="2" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+        <allocation task-id="105" resource-id="2" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+        <allocation task-id="106" resource-id="2" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+        <allocation task-id="134" resource-id="2" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+        <allocation task-id="149" resource-id="2" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+        <allocation task-id="152" resource-id="2" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+        <allocation task-id="163" resource-id="2" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+        <allocation task-id="167" resource-id="2" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+        <allocation task-id="165" resource-id="2" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+        <allocation task-id="229" resource-id="2" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+        <allocation task-id="233" resource-id="2" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+        <allocation task-id="236" resource-id="2" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+        <allocation task-id="238" resource-id="2" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+        <allocation task-id="240" resource-id="2" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+        <allocation task-id="246" resource-id="2" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+        <allocation task-id="250" resource-id="2" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+        <allocation task-id="258" resource-id="2" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+        <allocation task-id="262" resource-id="2" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+        <allocation task-id="284" resource-id="2" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+        <allocation task-id="10" resource-id="3" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+        <allocation task-id="5" resource-id="3" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+        <allocation task-id="0" resource-id="3" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+        <allocation task-id="22" resource-id="3" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+        <allocation task-id="44" resource-id="3" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+        <allocation task-id="58" resource-id="3" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+        <allocation task-id="66" resource-id="3" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+        <allocation task-id="71" resource-id="3" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+        <allocation task-id="80" resource-id="3" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+        <allocation task-id="85" resource-id="3" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+        <allocation task-id="91" resource-id="3" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+        <allocation task-id="92" resource-id="3" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+        <allocation task-id="97" resource-id="3" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+        <allocation task-id="100" resource-id="3" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+        <allocation task-id="105" resource-id="3" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+        <allocation task-id="106" resource-id="3" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+        <allocation task-id="131" resource-id="3" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+        <allocation task-id="134" resource-id="3" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+        <allocation task-id="149" resource-id="3" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+        <allocation task-id="152" resource-id="3" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+        <allocation task-id="163" resource-id="3" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+        <allocation task-id="167" resource-id="3" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+        <allocation task-id="165" resource-id="3" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+        <allocation task-id="229" resource-id="3" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+        <allocation task-id="233" resource-id="3" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+        <allocation task-id="236" resource-id="3" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+        <allocation task-id="238" resource-id="3" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+        <allocation task-id="240" resource-id="3" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+        <allocation task-id="246" resource-id="3" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+        <allocation task-id="250" resource-id="3" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+        <allocation task-id="258" resource-id="3" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+        <allocation task-id="262" resource-id="3" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+        <allocation task-id="284" resource-id="3" function="SoftwareDevelopment:8" responsible="false" load="100.0"/>
+    </allocations>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+    <roles roleset-name="SoftwareDevelopment"/>
+</project>
