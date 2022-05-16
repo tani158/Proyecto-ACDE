@@ -1,0 +1,87 @@
+application {
+    config {
+        baseName ACDE
+        applicationType monolith
+        packageName co.edu.acd
+        authenticationType jwt
+        devDatabaseType mysql
+        prodDatabaseType mysql
+        cacheProvider no
+        buildTool maven
+  
+        clientFramework angularX
+        enableTranslation true
+        nativeLanguage es
+        languages [en, es]
+        websocket false
+        jhiPrefix acde
+        reactive false
+        serverPort 8080
+        searchEngine false
+        clientTheme ceruleam
+        clientThemeVariant primary
+    }
+    entities *
+}
+enum State{
+  ACTIVE(Activo), 
+  INACTIVE (Inactivo)
+}
+
+entity DocumentType {
+	initials String required maxlength(10) unique,
+    documentName String required maxlength(100) unique,
+    stateDocumentType State required
+}
+entity Customer{
+    address String maxlength(50)
+    phoneNumber  String maxlength(50)
+}
+entity Employee {
+    status State required
+    charge String required maxlength(40) 
+}
+
+entity Assessment {
+    assessmentNumber Integer required
+    assessmentType String required maxlength(50)
+    dateassessment ZonedDateTime required
+    assessmentTotal Integer required
+}
+
+entity Training {
+	trainigNumber String required maxlength(100)
+    startDate LocalDate required
+    endDate LocalDate required
+    trainingName String required maxlength(100)
+    statusName String required maxlength(40)
+}
+
+entity Observationassessment {
+    resulttraining String required maxlength(40)
+    appropriationassement String required maxlength(200)
+   
+}
+
+
+
+relationship OneToMany {
+
+DocumentType to Customer {documentType(docuemntName) required}
+Customer to Assessment 
+Employee to Assessment
+Assessment to Observationassessment 
+Training to Observationassessment 
+
+}
+
+relationship OneToOne {
+	Customer{user(login) required} to User
+    Employee{user(login)} to User
+}
+   
+
+
+
+
+
